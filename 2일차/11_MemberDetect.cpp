@@ -10,10 +10,10 @@ public:
 	Test(int n) {}
 	void resize(int n) {}
 };
-// cppreference.com ¿¡¼­ allocator °Ë»ö
+// cppreference.com ì—ì„œ allocator ê²€ìƒ‰
 
-template<typename T> T xdeclval(); // ÇÙ½É. ±¸ÇöÀÌ ¾ø½À´Ï´Ù.
-				// Á¤È®È÷´Â T&& 
+template<typename T> T xdeclval(); // í•µì‹¬. êµ¬í˜„ì´ ì—†ìŠµë‹ˆë‹¤.
+				// ì •í™•íˆëŠ” T&& 
 
 
 template<typename U> struct has_resize_function
@@ -21,7 +21,7 @@ template<typename U> struct has_resize_function
 	typedef char YES[1]; 
 	typedef char NO[2];
 
-
+	///SFINAEì„ ì“°ê¸° ìœ„í•´ì„œëŠ” í•¨ìˆ˜ í…œí”Œë¦¿ì„ ì‚¬ìš©í•´ì•¼ í•©ë‹ˆë‹¤.
 	template<typename T> 
 	//static YES&   check( decltype( T().resize(0) )*  n );
 
