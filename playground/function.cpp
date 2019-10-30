@@ -63,9 +63,9 @@ template<typename T, typename...Ts> struct xfunction<T(Ts...)>
 
 	T operator()(Ts...args) {
 		if constexpr (is_same_v<T,void>)
-			(*fptr)(args...);
+			(*func_)(args...);
 		else
-			return (*fptr)(args...);
+			return (*func_)(args...);
 	}
 
 };
