@@ -11,8 +11,7 @@ template<int...is> class idx_seq {};
 Complicate the parent class to populate the integer list
 Inheritance is very versatile
 */
-template<int n, int...is> class idx_helper :public idx_helper<n-1,n-1,is...> {};
-
+template<int N, int...is> class idx_helper :public idx_helper<N-1,N-1,is...> {};
 template<int...is>  class idx_helper<0, is...>
 {
 public:

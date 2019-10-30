@@ -21,5 +21,14 @@
     <ClCompile Include="print_tuple.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="print_parameter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tuple_.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
