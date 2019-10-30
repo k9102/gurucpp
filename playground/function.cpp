@@ -74,21 +74,26 @@ template<typename T, typename...Ts> struct xfunction<T(Ts...)>
 class Test
 {
 public:
-	void Print(int v)
+	void Print(int a)
 	{
-		cout << v << endl;
+		cout << __FUNCSIG__ << endl;
+		cout << a << endl;
 	}
 };
 
-void print(int  v)
+void print(int  a)
 {
-	cout << v << endl;
+	cout << __FUNCSIG__ << endl;
+	cout << a << endl;
 }
 
 int main()
 {
 	xfunction<void(int)> f0(print);
-	xfunction<void(int)> f1([](int a) {cout << a << endl;});
+	xfunction<void(int)> f1([](int a) {
+		cout << __FUNCSIG__ << endl;
+		cout << a << endl;
+	});
 
 	
 	f0(10);
