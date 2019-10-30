@@ -36,5 +36,8 @@
     <ClCompile Include="function_.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="inf_wrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
