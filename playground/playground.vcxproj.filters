@@ -42,5 +42,8 @@
     <ClCompile Include="chronometry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="move_forward.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
